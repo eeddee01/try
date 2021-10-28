@@ -1,0 +1,32 @@
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0
+}
+html{
+  box-sizing: border-box;
+}
+a{text-decoration: none}
+body{
+  background: rgb(18, 18, 18);
+  width:100%;
+  height:100vh;
+  overflow: hidden
+}
+main{
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  overflow-x: hidden
+}
+
+@media only screen and (min-width:986px){
+main::-webkit-scrollbar{
+  width: 8px;
+  background: #111111
+}
+main::-webkit-scrollbar-thumb{
+  background: #bdbdbd;
+  border-radius:8px
+}
+}

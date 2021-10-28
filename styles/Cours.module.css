@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+.Homeform{
+  text-align: center;
+  width:100%;
+  margin:1em 0;
+}
+.Homeform input{
+  width: 25em;
+  padding:1.5em;
+  outline: none;
+  border:none;
+  background: #1a1a1a;
+  color:#eeeeee;
+  border-radius:.5em
+}
+
+.List{
+  width:90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none
+}
+.List li{
+  width: 15em;
+  margin:1em;
+  cursor: pointer;
+  border-bottom:1px solid #1a1a1a
+}
+
+.Listimg{
+  width:100%;
+  height: 10em;
+  border-radius: .5em;
+}
+.ListContent{padding:.5em}
+
+.ListContent h2{
+  color:#f1f1f1;
+  text-align: center;
+  padding:.5em 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ListContent p{
+  color:#bdbdbd;
+  padding:1em 0;
+  font-family: 'Markazi Text', serif;
+  letter-spacing:1px;
+}
+.ListContent span{
+  color:#0078f2;
+  font-size: 1.2em
+}
+
+@media only screen and (max-width:986px){
+
+  .List{
+    width:97%;
+    margin: 1em auto;
+    display: block;
+    padding: 3em 0 0 0;
+  }
+
+  .List li{
+    width: 100%;
+    margin:1em 0;
+    box-shadow: none;
+    border-radius: 0
+  }
+  .Listimg{
+    height: 11em;
+  }
+  .ListContent h2{
+    text-align: center;
+  }
+  .ListContent p{
+    padding:2em 0;
+  }
+  .Homeform{
+    margin:0;
+    position: absolute;
+    top: 0;
+    z-index:999;
+  }
+  .Homeform input{
+    width:100%;
+    border-radius: 0
+  }
+}
